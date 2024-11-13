@@ -6,13 +6,14 @@ header {
 }
 
 header nav {
-    padding: 8px 12px 4px;
+    padding: 8px 16px;
     max-width: 128rem;
     margin: auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 header nav a {
@@ -21,6 +22,7 @@ header nav a {
     gap: 8px;
 
     padding: 8px 12px;
+    color: rgb(255 255 227);
     border: 1px solid rgb(50 50 40);
     border-radius: 12px;
 
@@ -34,22 +36,48 @@ header nav a div {
     border-radius: 24px;
 }
 
-header nav button {
+header nav .menu-button {
     display: flex;
-    flex-direction: column;
     align-items: center;
     border-radius: 24px;
     background-color: transparent;
     border: none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
     text-align: inherit;
     font: inherit;
-    border-radius: 0;
-    appearance: none; 
+    appearance: none;
 }
 
-/* header nav button svg {
-    padding: 5px;
-    background-color: rgb(50, 50, 40);
-} */
+#menu-toggle ~ .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#menu-toggle:checked ~ .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(14, 16, 15);
+    border: 1px solid rgb(40, 40, 50);
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
