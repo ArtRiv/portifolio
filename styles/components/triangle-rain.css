@@ -152,3 +152,29 @@
     animation-duration: 3.9s;
     animation-delay: 1.4s;
 }
+
+.triangle:nth-child(13) {
+    left: 12%;
+    animation-duration: 2.1s;
+    animation-delay: 2s;
+}
+.triangle:nth-child(14) {
+    left: 91%;
+    animation-duration: 3.3s;
+    animation-delay: 2.5s;
+}
+.triangle:nth-child(15) {
+    left: 74%;
+    animation-duration: 4.9s;
+    animation-delay: 1.3s;
+}
+.triangle:nth-child(16) {
+    left: 53%;
+    animation-duration: 3s;
+    animation-delay: 1.7s;
+}
+.triangle:nth-child(17) {
+    left: 80%;
+    animation-duration: 4s;
+    animation-delay: 1.9s;
+}
