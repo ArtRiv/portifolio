@@ -1,0 +1,31 @@
+.form_section {
+    width: 100%;
+    padding: 96px 24px;
+    height: 100%;
+}
+
+.form_section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form_section h2 {
+    margin: 24px 0;
+}
+
+.form_section form input, textarea {
+    padding: 12px;
+    background-color: rgb(14, 16, 15);
+    border: 1px solid rgb(40, 40, 50);
+    border-radius: 12px;
+    color: white;
+}
+
+.form_section form button {
+    padding: 12px;
+    background-color: rgb(34 197 94);
+    border: 1px solid rgb(40, 40, 50);
+    border-radius: 12px;
+    color: white;
+}
