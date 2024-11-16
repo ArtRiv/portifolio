@@ -29,13 +29,6 @@ header nav a {
     cursor: pointer;
 }
 
-header nav a div {
-    background-color: rgb(255 255 227);
-    width: 12px;
-    height: 12px;
-    border-radius: 24px;
-}
-
 header nav .menu-button {
     display: flex;
     align-items: center;
@@ -80,4 +73,61 @@ header nav .menu-button {
     transform: translateY(-10px);
     pointer-events: none;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+@media (min-width: 640px) {
+    header {
+        height: 72px;
+    }
+    header nav {
+        padding: 16px 32px;
+        height: 100%;
+    }
+    header nav a {
+        gap: 16px;
+        padding: 16px 24px;
+        font-size: 20px;
+    }
+    header nav label svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 96px;
+    }
+    header nav {
+        padding: 16px 64px;
+        height: 100%;
+    }
+    header nav a {
+        gap: 16px;
+        padding: 16px 24px;
+        font-size: 24px;
+    }
+    header nav label svg {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        height: 116px;
+    }
+    header nav {
+        padding: 24px 72px;
+        height: 100%;
+    }
+    header nav a {
+        gap: 32px;
+        padding: 12px 20px;
+        font-size: 22px;
+    }
+    header nav label svg {
+        width: 40px;
+        height: 40px;
+    }
 }
