@@ -246,6 +246,10 @@
     padding: 0; /* 3 */
     white-space: normal; /* 1 */
   }
+
+  li {
+    list-style: none;
+  }
   
   /**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
