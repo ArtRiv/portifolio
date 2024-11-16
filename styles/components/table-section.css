@@ -1,0 +1,116 @@
+/* table like section */
+
+.table_section {
+    position: relative;
+    width: 100%;
+    padding: 48px 12px;
+}
+
+.table_section strong {
+    color: rgb(240 171 252);  
+    animation: colorChange 10s infinite;
+}
+
+.table_section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_section td {
+    padding: 12px 8px;
+    border-bottom: 1px solid rgb(50, 50, 40);
+}
+
+.table_section tr:last-child td {
+    border-bottom: none;
+}
+
+.table_section td:first-child {
+    font-weight: bold;
+    color: rgb(240, 171, 252); 
+    width: 30%; 
+    text-align: left;
+}
+
+.table_section td:last-child {
+    text-align: right; 
+}
+
+.disciplines_button {
+    text-decoration: underline;
+}
+
+#disciplines-toggle ~ .disciplines_dropdown_menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#disciplines-toggle:checked ~ .disciplines_dropdown_menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.disciplines_dropdown_menu {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(14, 16, 15);
+    border: 1px solid rgb(40, 40, 50);
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 12px;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.carousel {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.semester-table {
+    min-width: 100%; 
+    scroll-snap-align: start;
+    border-collapse: collapse;
+}
+
+.semester-table td {
+    text-align: left !important;
+}
+
+@media (min-width: 768px) {
+    .table_section {
+        position: relative;
+        width: 100%;
+        padding: 48px 96px;
+    }
+    .table_section table {
+        border: 1px solid rgb(240, 171, 252);
+        font-size: 18px;
+    }
+    .disciplines_dropdown_menu {
+        width: 600px;
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 1028px) {
+    .disciplines_dropdown_menu {
+        top: -20px;
+        left: 0px;
+        width: 600px;
+        max-height: 400px;
+    }
+}
