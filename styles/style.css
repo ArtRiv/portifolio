@@ -1,13 +1,14 @@
-@import url("styles/normalize.css");
-@import url("styles/components/scrollbar.css");
-@import url("styles/components/header.css");
-@import url("styles/components/main.css");
-@import url("styles/components/triangles-rain.css");
-@import url("styles/components/footer.css");
-@import url("styles/components/table-section.css");
-@import url("styles/main_page/section.css");
-@import url("styles/professional_page/section.css");
-@import url("styles/contact_me/section.css");
+@import url("normalize.css");
+@import url("components/scrollbar.css");
+@import url("components/header.css");
+@import url("components/main.css");
+@import url("components/triangles-rain.css");
+@import url("components/footer.css");
+@import url("components/table-section.css");
+@import url("main_page/section.css");
+@import url("professional/section.css");
+@import url("contact_me/section.css");
+@import url("print/style.css");
 
 *,:after,:before {
     box-sizing: border-box;

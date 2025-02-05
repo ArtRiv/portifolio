@@ -1,0 +1,22 @@
+.professional_section {
+    width: 100%;
+    padding: 96px 24px;
+    height: 100%;
+}
+
+.professional_section h1 {
+    text-align: center;
+}
+
+.professional_section ul {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.professional_section li {
+
+}
